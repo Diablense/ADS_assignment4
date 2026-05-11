@@ -1,0 +1,16 @@
+A: C B D
+B: A C E G
+C: A B D
+D: C A
+E: G F B
+F: G E
+G: F B
+It will be in the following order
+A C B D E G F
+{A} adding C B D to queue
+{C} nothing added
+{B} adding E G to queue
+{D} nothing
+{E} adding F to queue
+{G} nothing
+{F} nothing

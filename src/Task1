@@ -1,0 +1,22 @@
+A: C B D
+B: A C E G
+C: A B D
+D: C A
+E: G F B
+F: G E
+G: F B
+It will be in the following order
+A C B E G F D
+A->C Since C is listed first the first visit will be C
+C->B since A is considered already visited the DFS will visit the next listed node
+B->E in similar manner to previous one
+E->G
+G->F
+G<-F returning to previous node since both G and E are marked as visited(not a visit just backtracking)
+E<-G returning to previous node
+B<-E returning to previous node
+C<-B
+C->D since D is not marked as visited
+C<-D both c and a are marked as visited
+A<-C returning to original node
+it ends there since both B and D were marked as visited before.

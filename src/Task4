@@ -1,0 +1,12 @@
+i will refer to cities by their first letters for convenience purposes
+first i will set summary distance(SD later on) to city E as 0 and others as infinity(-1 in code)
+next i will set SD for cities G S P as 70 50 and 100 respectively and i will mark city E as visited
+now i will pick S as current node because it has smallest SD
+i will evaluate distances from S to neighboring nodes G and P(E is marked as visited) and mark S as visited
+which will be 100 and 90 respectively for G and P
+since 90 is < than previous SD stored for P new SD for P is 90 and SD for G remains the same
+Now i will visit city G and mark it visited since all its neighbors are visited
+now i will visit city P as the next smallest SD city and the only left neighbor of city E
+now i will calculate SD from P to D(our destination) which is 150
+now that we reached the destination i will stop and the minimum distance is 150
+and the shortest route is E->S->P->D
